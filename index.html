@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>AutoParts — автозапчасти онлайн</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="top">🚚 Доставка по Молдове · Подбор запчастей по VIN</div>
+  <div class="nav">
+    <a class="logo" href="#">AUTO<span>PARTS</span></a>
+    <button class="catalog" onclick="toggleCatalog()">☰ Каталог</button>
+    <div class="search"><input id="search" placeholder="Поиск по названию, артикулу или VIN"><button onclick="searchProducts()">Найти</button></div>
+    <div class="icons">♡　🛒 <b id="cartCount">0</b></div>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div>
+    <p class="eyebrow">АВТОЗАПЧАСТИ ОНЛАЙН</p>
+    <h1>Найди запчасть<br><span>для своего автомобиля</span></h1>
+    <p>Большой выбор деталей, масел и аксессуаров. Быстрый поиск по артикулу или VIN.</p>
+    <button class="primary" onclick="document.getElementById('products').scrollIntoView()">Смотреть каталог</button>
+  </div>
+  <div class="car">🚗</div>
+</section>
+
+<section class="categories">
+  <h2>Категории</h2>
+  <div class="cat-grid">
+    <button>🔧 Двигатель</button><button>🛞 Подвеска</button>
+    <button>🛑 Тормозная система</button><button>🔋 Электрика</button>
+    <button>🧴 Масла и жидкости</button><button>💡 Освещение</button>
+  </div>
+</section>
+
+<section id="products">
+  <div class="section-head"><h2>Популярные товары</h2><span id="result"></span></div>
+  <div class="grid" id="grid"></div>
+</section>
+</main>
+
+<div class="drawer" id="catalog"><h3>Каталог</h3><p>Двигатель</p><p>Тормоза</p><p>Фильтры</p><p>Подвеска</p><p>Электрика</p><p>Кузов</p></div>
+
+<footer>© 2026 AutoParts · Интернет-магазин автозапчастей</footer>
+<script src="script.js"></script>
+</body>
+</html>
